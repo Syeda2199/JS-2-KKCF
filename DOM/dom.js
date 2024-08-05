@@ -1,21 +1,23 @@
+// 1. Select the element with the id 'title' using getElementById
+document.getElementById('title');
 
+// 2. Save the reference to the element with the id 'title' to a variable
+// myTitle = document.getElementById('title');
 
-// 1. select the element with the id 'title' using getElementById
+// 3. Console log the element by id
+console.log(document.getElementById("title"));
 
-// 2.  save the reference to the element with the id 'title' to a variable
+// 4. Use querySelector to select the first h2
+document.querySelector('h2');
 
-// 3. console log the new variable 
+// 5. Use querySelector to select all h2's by its class of 'description'
+document.querySelectorAll('.description');
 
-// 4. Use query selector to select the first h2 
-document.querySelector()
+// 6. Use querySelectorAll to select all h2's on the page
 
-//5. Use query selector to select the paragraph by its class of 'description'
-
-// 6. Use query selector all to select all the h2's on the page
-
-//7. Exercise 1 Create at least 3 different elements in the body of your html file
-// In your JS file select each element and log them to the console 
-// Select multiple elements with querySelectorAll() and log them to the console
+// Exercise 1: Create at least 3 different elements in your HTML file.
+// In your JS file, select all of them and log them to the console.
+document.querySelectorAll('');
 
 // 8. use innerText property to change the text of the h1 with the id 'transform
 
@@ -28,7 +30,7 @@ document.querySelector()
 
 // 11. Modify CSS - Select the element with the id 'text-output'
 // use the style.fontSize property to set the text size to 30px
-
+document.querySelector("#transform").innerText = "Sailor Moon"
 // 12. Select the body element and use style.cssText to change the text color and background color
 
 //13. Change src attribute of the image 
