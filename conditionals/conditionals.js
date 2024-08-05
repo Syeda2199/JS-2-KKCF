@@ -111,9 +111,9 @@ let number = Math.floor(Math.random() * max)
      console.log("number is negative")
  }
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+ function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
 
 let num1 = Math.floor(Math.random() * 10);
 let num2 = Math.floor(Math.random() * 10);
