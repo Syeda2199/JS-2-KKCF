@@ -30,7 +30,8 @@ document.querySelectorAll('');
 
 // 11. Modify CSS - Select the element with the id 'text-output'
 // use the style.fontSize property to set the text size to 30px
-document.querySelector("#transform").innerText = "Sailor Moon"
+let userName = prompt("Welcome, enter your name")
+document.querySelector("#transform").innerText = "Welcome,  "Name"
 // 12. Select the body element and use style.cssText to change the text color and background color
 
 //13. Change src attribute of the image 
