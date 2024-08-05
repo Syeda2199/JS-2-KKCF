@@ -65,8 +65,8 @@ let x = 4;
 let y = 8;
 let z = 12;
 
-x < 5 && y > 5; // returns true because both conditions are true
-x > 5 && z > 10; // returns false because x > 5 is false
+4 < 5 && 8 > 5; // returns true because both conditions are true
+4 > 5 && 12 > 10; // returns false because x > 5 is false
 y > 10 && z > 10; // returns false because y > 10 is false
 // console.log('x < 5 and y > 5:', x < 5 && y > 5);
 // console.log('x > 5 and z > 10:', x > 5 && z > 10);
@@ -77,42 +77,57 @@ let a = 3;
 let b = 6;
 let c = 9;
 
-a > 2 || b < 5; // returns true because a > 2 is true
-a < 2 || b < 5; // returns false because both conditions are false
-b > 5 || c < 8; // returns true because b > 5 is true
-// console.log('a > 2 or b < 5:', a > 2 || b < 5);
+3 > 2 || b < 5; // returns true because a > 2 is true
+3 < 2 || b < 5; // returns false because both conditions are false
+9 > 5 || c < 8; // returns true because b > 5 is true
+console.log('3 > 2 or 6 < 5:', 3 > 2 || 6 < 5);
 // console.log('a < 2 or b < 5:', a < 2 || b < 5);
 // console.log('b > 5 or c < 8:', b > 5 || c < 8);
 
 //if statement 
-// let age = 25;
-// if (age >= 18) {
-//   console.log("You can vote!");
-// }
+ let age = 25;
+if (age >= 18) {
+   console.log("You can vote!");
+ }
 
 //if else 
-// let number = 2
-// if(number > 0){
-//     console.log("number is positive")
-// }
-// else {
-//     console.log("number is not greater than 0")
-// }
+let number = 2
+ if(number > 0){
+     console.log("number is positive")
+ }
+ else {
+    console.log("number is not greater than 0")
+ }
 
 //if else if else
-// let number = 2
-// if(number > 0){
-//     console.log("number is positive")
-// }
-// else if(number == 0){
-//     console.log("number is equal to 0")
-// }
-// else {
-//     console.log("number is negative")
-// }
+let number = Math.floor(Math.random() * max)
+ if(number > 0){
+    console.log("number is positive")
+}
+ else if(number == 0){
+     console.log("number is equal to 0")
+ }
+ else {
+     console.log("number is negative")
+ }
 
-// Write a conditional statement to find the largest of three numbers
-// Make 3 variables that prompts the user for a number
-// Use conditionals and comparisons to find which of the 3 is largest 
-// Console.log the result
-// Result: “x is the largest number”
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+let num1 = Math.floor(Math.random() * 10);
+let num2 = Math.floor(Math.random() * 10);
+let num3 = Math.floor(Math.random() * 10);
+
+let largestNumber;
+
+if (num1 >= num2 && num1 >= num3) {
+    largestNumber = num1;
+} else if (num2 >= num1 && num2 >= num3) {
+    largestNumber = num2;
+} else {
+    largestNumber = num3;
+}
+
+// Display the result
+console.log(`${largestNumber} is the largest number.`);
