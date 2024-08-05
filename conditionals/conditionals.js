@@ -1,7 +1,8 @@
 // Equal values
 10 == 3 // returns false
 5 == 5 // returns true
-6 == "6" // returns true
+6 == "6" // returns 
+7 == "7" // strict equality = false
 // console.log('5 and 5 are equal:', 5 == 5);
 // console.log('10 and 3 are equal:', 10 == 3);
 
