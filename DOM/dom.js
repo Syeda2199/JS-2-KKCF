@@ -17,7 +17,7 @@ document.querySelectorAll('.description');
 
 // Exercise 1: Create at least 3 different elements in your HTML file.
 // In your JS file, select all of them and log them to the console.
-document.querySelectorAll('');
+document.querySelectorAll('randomColor');
 
 // 8. use innerText property to change the text of the h1 with the id 'transform
 
@@ -31,7 +31,57 @@ document.querySelectorAll('');
 // 11. Modify CSS - Select the element with the id 'text-output'
 // use the style.fontSize property to set the text size to 30px
 let userName = prompt("Welcome, enter your name")
-document.querySelector("#transform").innerText = "Welcome,  "Name"
+document.querySelector("#transform").innerText = "Welcome" +  "Name"
 // 12. Select the body element and use style.cssText to change the text color and background color
 
 //13. Change src attribute of the image 
+
+// Declare function
+function sayHello() {
+    // Whatever code your function will run
+    alert("Hello world!");
+}
+
+//call the function
+//sayHello();
+
+// parameters
+function add2nums(a, b){
+    alert(a+b)
+}
+
+//add2nums(2,3)
+
+//addeventListener
+
+//select the button element
+let myButton = document.querySelector("button")
+
+//declared event handler function
+function handleClick(){
+    alert('button was clicked')
+}
+//use addEventListener to run the handleClick function when the button is clicked
+myButton.addEventListener('click', handleClick);
+//we are listening for the click event, when it happens, run the handleClick function
+
+// random color exercise
+//select random color button
+let colorButton = document.querySelector("#random-color")
+
+//declare event handler function
+let randomR = Math.floor(Math.random() * 255 )
+    let randomB = Math.floor(Math.random() * 255 )
+    let randomG = Math.floor(Math.random() * 255 )
+
+function randomColor(){
+    //255 is the max number 
+    let randomR = Math.floor(Math.random() * 255 )
+    let randomB = Math.floor(Math.random() * 255 )
+    let randomG = Math.floor(Math.random() * 255 )
+    //select the body element
+    //change the background color 
+    document.body.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+}
+
+colorButton.addEventListener("click", randomColor)
